@@ -59,3 +59,8 @@ Requires a C compiler.
 ::
 
     pip install --upgrade --user hmmlearn
+    
+
+PyCharm Install
+===============
+Change in setup.py (remove include_dirs) to compile in PyCharm.
