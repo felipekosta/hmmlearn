@@ -32,7 +32,7 @@ class build_ext(build_ext, object):
         for ext in self.distribution.ext_modules:
             for k, v in np.distutils.misc_util.get_info("npymath").items():
                 setattr(ext, k, v)
-            ext.include_dirs = [np.get_include()]
+            #ext.include_dirs = [np.get_include()]
 
         super(build_ext, self).finalize_options()
 
